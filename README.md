@@ -5,7 +5,7 @@
 
 Driver drowsiness is a significant contributor to road accidents worldwide, often resulting in serious injuries or fatalities. Fatigue impairs alertness, slows reaction times, and hampers decision-making—especially during long trips, monotonous highway driving, or late-night travel when circadian rhythms naturally promote sleep.
 
-This project presents the Drowsy Driver Detection System, a real-time application that uses computer vision and deep learning to identify signs of drowsyness based on eye state (open / closed). It monitors the driver's eyes through a camera feed and triggers alerts if prolonged eye closure (typically beyond 2–3 seconds) is detected, helping prevent accidents before they happen.
+This project presents the Drowsy Driver Detection System, a real-time application that uses computer vision and deep learning to identify signs of drowsyness based on eye state (open / closed). It monitors the driver's eyes through a camera feed and triggers alerts if prolonged eye closure (typically beyond 2–3 seconds) is detected, helping prevent accidents before they happen. The system explored multiple face detection techniques—including CNN, HOG, and DNN—and performed a comparative analysis to evaluate their accuracy and robustness. Similarly, Haar Cascade and MediaPipe were compared for eye detection, with the final implementation using DNN for face detection and MediaPipe Face Mesh for eye localization due to their superior performance in real-time conditions.
 
 To ensure robust performance under varied lighting and occlusion conditions, the system employs:
 * Deep Neural Networks (DNN) for fast and accurate face detection,
